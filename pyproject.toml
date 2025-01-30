@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "web-scraping-inicio"
+version = "0.1.0"
+description = ""
+authors = ["Diego Morais <dolivmorais@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+bs4 = "^0.0.2"
+pandas = "^2.2.3"
+pytimedinput = "^2.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
