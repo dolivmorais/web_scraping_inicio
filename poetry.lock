@@ -27,6 +27,25 @@ astroid = ["astroid (>=2,<4)"]
 test = ["astroid (>=2,<4)", "pytest", "pytest-cov", "pytest-xdist"]
 
 [[package]]
+name = "attrs"
+version = "25.1.0"
+description = "Classes Without Boilerplate"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "attrs-25.1.0-py3-none-any.whl", hash = "sha256:c75a69e28a550a7e93789579c22aa26b0f5b83b75dc4e08fe092980051e1090a"},
+    {file = "attrs-25.1.0.tar.gz", hash = "sha256:1c97078a80c814273a76b2a298a932eb681c87415c11dee0a6921de7f1b02c3e"},
+]
+
+[package.extras]
+benchmark = ["cloudpickle", "hypothesis", "mypy (>=1.11.1)", "pympler", "pytest (>=4.3.0)", "pytest-codspeed", "pytest-mypy-plugins", "pytest-xdist[psutil]"]
+cov = ["cloudpickle", "coverage[toml] (>=5.3)", "hypothesis", "mypy (>=1.11.1)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-xdist[psutil]"]
+dev = ["cloudpickle", "hypothesis", "mypy (>=1.11.1)", "pre-commit-uv", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-xdist[psutil]"]
+docs = ["cogapp", "furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphinxcontrib-towncrier", "towncrier (<24.7)"]
+tests = ["cloudpickle", "hypothesis", "mypy (>=1.11.1)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-xdist[psutil]"]
+tests-mypy = ["mypy (>=1.11.1)", "pytest-mypy-plugins"]
+
+[[package]]
 name = "beautifulsoup4"
 version = "4.12.3"
 description = "Screen-scraping library"
@@ -341,6 +360,17 @@ files = [
 tests = ["asttokens (>=2.1.0)", "coverage", "coverage-enable-subprocess", "ipython", "littleutils", "pytest", "rich"]
 
 [[package]]
+name = "h11"
+version = "0.14.0"
+description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "h11-0.14.0-py3-none-any.whl", hash = "sha256:e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761"},
+    {file = "h11-0.14.0.tar.gz", hash = "sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d"},
+]
+
+[[package]]
 name = "idna"
 version = "3.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -572,6 +602,20 @@ files = [
     {file = "numpy-2.2.2-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:356ca982c188acbfa6af0d694284d8cf20e95b1c3d0aefa8929376fea9146f60"},
     {file = "numpy-2.2.2.tar.gz", hash = "sha256:ed6906f61834d687738d25988ae117683705636936cc605be0bb208b23df4d8f"},
 ]
+
+[[package]]
+name = "outcome"
+version = "1.3.0.post0"
+description = "Capture the outcome of Python function calls."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "outcome-1.3.0.post0-py2.py3-none-any.whl", hash = "sha256:e771c5ce06d1415e356078d3bdd68523f284b4ce5419828922b6871e65eda82b"},
+    {file = "outcome-1.3.0.post0.tar.gz", hash = "sha256:9dcf02e65f2971b80047b377468e72a268e15c0af3cf1238e6ff14f7f91143b8"},
+]
+
+[package.dependencies]
+attrs = ">=19.2.0"
 
 [[package]]
 name = "packaging"
@@ -806,6 +850,18 @@ files = [
 windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
+name = "pysocks"
+version = "1.7.1"
+description = "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+files = [
+    {file = "PySocks-1.7.1-py27-none-any.whl", hash = "sha256:08e69f092cc6dbe92a0fdd16eeb9b9ffbc13cadfe5ca4c7bd92ffb078b293299"},
+    {file = "PySocks-1.7.1-py3-none-any.whl", hash = "sha256:2725bd0a9925919b9b51739eea5f9e2bae91e83288108a9ad338b2e3a4435ee5"},
+    {file = "PySocks-1.7.1.tar.gz", hash = "sha256:3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0"},
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -818,6 +874,20 @@ files = [
 
 [package.dependencies]
 six = ">=1.5"
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
 
 [[package]]
 name = "pytimedinput"
@@ -1011,6 +1081,25 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "selenium"
+version = "4.28.1"
+description = "Official Python bindings for Selenium WebDriver"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "selenium-4.28.1-py3-none-any.whl", hash = "sha256:4238847e45e24e4472cfcf3554427512c7aab9443396435b1623ef406fff1cc1"},
+    {file = "selenium-4.28.1.tar.gz", hash = "sha256:0072d08670d7ec32db901bd0107695a330cecac9f196e3afb3fa8163026e022a"},
+]
+
+[package.dependencies]
+certifi = ">=2021.10.8"
+trio = ">=0.17,<1.0"
+trio-websocket = ">=0.9,<1.0"
+typing_extensions = ">=4.9,<5.0"
+urllib3 = {version = ">=1.26,<3", extras = ["socks"]}
+websocket-client = ">=1.8,<2.0"
+
+[[package]]
 name = "six"
 version = "1.17.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -1019,6 +1108,28 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 files = [
     {file = "six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"},
     {file = "six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"},
+]
+
+[[package]]
+name = "sniffio"
+version = "1.3.1"
+description = "Sniff out which async library your code is running under"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "sniffio-1.3.1-py3-none-any.whl", hash = "sha256:2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2"},
+    {file = "sniffio-1.3.1.tar.gz", hash = "sha256:f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc"},
+]
+
+[[package]]
+name = "sortedcontainers"
+version = "2.4.0"
+description = "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sortedcontainers-2.4.0-py2.py3-none-any.whl", hash = "sha256:a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0"},
+    {file = "sortedcontainers-2.4.0.tar.gz", hash = "sha256:25caa5a06cc30b6b83d11423433f65d1f9d76c4c6a0c90e3379eaa43b9bfdb88"},
 ]
 
 [[package]]
@@ -1087,6 +1198,51 @@ docs = ["myst-parser", "pydata-sphinx-theme", "sphinx"]
 test = ["argcomplete (>=3.0.3)", "mypy (>=1.7.0)", "pre-commit", "pytest (>=7.0,<8.2)", "pytest-mock", "pytest-mypy-testing"]
 
 [[package]]
+name = "trio"
+version = "0.28.0"
+description = "A friendly Python library for async concurrency and I/O"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "trio-0.28.0-py3-none-any.whl", hash = "sha256:56d58977acc1635735a96581ec70513cc781b8b6decd299c487d3be2a721cd94"},
+    {file = "trio-0.28.0.tar.gz", hash = "sha256:4e547896fe9e8a5658e54e4c7c5fa1db748cbbbaa7c965e7d40505b928c73c05"},
+]
+
+[package.dependencies]
+attrs = ">=23.2.0"
+cffi = {version = ">=1.14", markers = "os_name == \"nt\" and implementation_name != \"pypy\""}
+idna = "*"
+outcome = "*"
+sniffio = ">=1.3.0"
+sortedcontainers = "*"
+
+[[package]]
+name = "trio-websocket"
+version = "0.11.1"
+description = "WebSocket library for Trio"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "trio-websocket-0.11.1.tar.gz", hash = "sha256:18c11793647703c158b1f6e62de638acada927344d534e3c7628eedcb746839f"},
+    {file = "trio_websocket-0.11.1-py3-none-any.whl", hash = "sha256:520d046b0d030cf970b8b2b2e00c4c2245b3807853ecd44214acd33d74581638"},
+]
+
+[package.dependencies]
+trio = ">=0.11"
+wsproto = ">=0.14"
+
+[[package]]
+name = "typing-extensions"
+version = "4.12.2"
+description = "Backported and Experimental Type Hints for Python 3.8+"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"},
+    {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
+]
+
+[[package]]
 name = "tzdata"
 version = "2025.1"
 description = "Provider of IANA time zone data"
@@ -1108,6 +1264,9 @@ files = [
     {file = "urllib3-2.3.0.tar.gz", hash = "sha256:f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d"},
 ]
 
+[package.dependencies]
+pysocks = {version = ">=1.5.6,<1.5.7 || >1.5.7,<2.0", optional = true, markers = "extra == \"socks\""}
+
 [package.extras]
 brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
 h2 = ["h2 (>=4,<5)"]
@@ -1125,7 +1284,53 @@ files = [
     {file = "wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"},
 ]
 
+[[package]]
+name = "webdriver-manager"
+version = "4.0.2"
+description = "Library provides the way to automatically manage drivers for different browsers"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "webdriver_manager-4.0.2-py2.py3-none-any.whl", hash = "sha256:75908d92ecc45ff2b9953614459c633db8f9aa1ff30181cefe8696e312908129"},
+    {file = "webdriver_manager-4.0.2.tar.gz", hash = "sha256:efedf428f92fd6d5c924a0d054e6d1322dd77aab790e834ee767af392b35590f"},
+]
+
+[package.dependencies]
+packaging = "*"
+python-dotenv = "*"
+requests = "*"
+
+[[package]]
+name = "websocket-client"
+version = "1.8.0"
+description = "WebSocket client for Python with low level API options"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "websocket_client-1.8.0-py3-none-any.whl", hash = "sha256:17b44cc997f5c498e809b22cdf2d9c7a9e71c02c8cc2b6c56e7c2d1239bfa526"},
+    {file = "websocket_client-1.8.0.tar.gz", hash = "sha256:3239df9f44da632f96012472805d40a23281a991027ce11d2f45a6f24ac4c3da"},
+]
+
+[package.extras]
+docs = ["Sphinx (>=6.0)", "myst-parser (>=2.0.0)", "sphinx-rtd-theme (>=1.1.0)"]
+optional = ["python-socks", "wsaccel"]
+test = ["websockets"]
+
+[[package]]
+name = "wsproto"
+version = "1.2.0"
+description = "WebSockets state-machine based protocol implementation"
+optional = false
+python-versions = ">=3.7.0"
+files = [
+    {file = "wsproto-1.2.0-py3-none-any.whl", hash = "sha256:b9acddd652b585d75b20477888c56642fdade28bdfd3579aa24a4d2c037dd736"},
+    {file = "wsproto-1.2.0.tar.gz", hash = "sha256:ad565f26ecb92588a3e43bc3d96164de84cd9902482b130d0ddbaa9664a85065"},
+]
+
+[package.dependencies]
+h11 = ">=0.9.0,<1"
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "2005fdab78d051f7e0ef08b22ba5e2d5be1e246f4b4f08b4ba68638f558b1600"
+content-hash = "ce5359ab9e257b9e3986b91cc09a8f1e4716084a27dbb4a645428dffd8b9af88"
